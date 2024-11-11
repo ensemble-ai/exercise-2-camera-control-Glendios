@@ -140,7 +140,7 @@ vessle after not moving is too long. The code is easy to follow and read.
 
 The camera does function with it speeding up when the vessel is in the speeding up zone.
 Also once the player is at the edge of the outbox it properly pushes the whole box.
-An issue is that the outer box is a rectangle which leads to the top and bottom speed up zones not having the same area as the left
+A minor issue is that the outer box is a rectangle which leads to the top and bottom speed up zones not having the same area as the left
 and right. The code is easy to and has very useful comments.
 
 ---
@@ -191,6 +191,7 @@ This should be similar to the Code Style justification.
 #### Best Practices Exemplars
 
 - [Detailed naming of variables.](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L10)
+  Can clearly understand what each variables is and does.
 - [Detailed comments](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L51) to help follow along with the code. They are not too long
   and stright to the point in explaining the code.
 - [Great seperation between functions](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/67b5555776edfb6f0b8f99c110f41e681b319549/Obscura/scripts/camera_controllers/speed_push_camera.gd#L53). This
