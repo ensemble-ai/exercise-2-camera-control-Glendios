@@ -22,8 +22,8 @@ If you are in a rare situation where two peer-reviewers are on a single reposito
 
 ## Peer-reviewer Information
 
-- _name:_ [your name here]
-- _email:_ [your @ucdavis.edu email address here]
+- _name:_ Patrick Le
+- _email:_ plele@ucdavis.edu
 
 ### Description
 
@@ -83,7 +83,9 @@ The position lock works percetly fine. Also it still works during hyper speed an
 
 #### Justification
 
-The auto scroller works perfect as well. The player is unable to move outside the bounds of the box and the autoscroll function is working. When the player is against the left side of the box the vessle is push along. As for the code it is simple and easy to follow.
+The auto scroller works perfect as well. The player is unable to move outside the bounds of the box and the autoscroll
+function is working. When the player is against the left side of the box the vessle is push along. As for the code it is simple
+and easy to follow.
 
 ---
 
@@ -91,15 +93,18 @@ The auto scroller works perfect as well. The player is unable to move outside th
 
 - [ ] Perfect
 - [ ] Great
-- [ ] Good
-- [x] Satisfactory
+- [x] Good
+- [ ] Satisfactory
 - [ ] Unsatisfactory
 
 ---
 
 #### Justification
 
-The camera does work however there are some major issues. Such as the speed and distance the camera follows the player. When the player moves the camera seems to move instantly after it. Adjustments to make the leash distance longer could help with this issue. Also the camera does not center on the player after it moves.
+The camera does work however there are some major issues. Such as the speed and distance the camera follows the player.
+When the player moves the camera seems to move instantly after it. Adjustments to make the leash distance longer could help
+with this issue. Also the camera does not center on the player after it moves. The vessle is jittering during movement and the movement
+does not feel smooth.
 
 ---
 
@@ -115,7 +120,9 @@ The camera does work however there are some major issues. Such as the speed and 
 
 #### Justification
 
-The camera does work. The player is able to move ahead of the camera a certain distance before moving woards the player. The only issue I see the that the timer for the camera to recenter on the vessle after not moving is too long. The code is easy to follow and read.
+The camera does work and the movement of the camera is smooth. However the vessel does seem to jitter like stage 3
+The player is able to move ahead of the camera a certain distance before moving woards the player. The only issue I see the that the timer for the camera to recenter on the
+vessle after not moving is too long. The code is easy to follow and read.
 
 ---
 
@@ -131,7 +138,10 @@ The camera does work. The player is able to move ahead of the camera a certain d
 
 #### Justification
 
-The camera does function with it speeding up when the vessel is in the speeding up zone. Also once the player is at the edge of the outbox it properly pushes the whole box. An issue is that the outer box is a rectangle which leads to the top and bottom speed up zones not having the same area as the left and right. The code is easy to and has very useful comments.
+The camera does function with it speeding up when the vessel is in the speeding up zone.
+Also once the player is at the edge of the outbox it properly pushes the whole box.
+An issue is that the outer box is a rectangle which leads to the top and bottom speed up zones not having the same area as the left
+and right. The code is easy to and has very useful comments.
 
 ---
 
@@ -151,7 +161,10 @@ Please refer to the first code review template on how to do a permalink.
 
 #### Style Guide Infractions
 
-- Could not find any infractions. Looked through all the camera scripts and all the code looks properly formated with proper spacing, comments and indentations.
+- [There should be a space after the colon](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/67b5555776edfb6f0b8f99c110f41e681b319549/Obscura/scripts/camera_controllers/position_lock_camera.gd#L5)
+  when declaring the variables.
+- [There should not be a new line here](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/67b5555776edfb6f0b8f99c110f41e681b319549/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L36). It should be instead all on the same line since
+  you are subtracting them to find the movement.
 
 #### Style Guide Exemplars
 
@@ -177,5 +190,8 @@ This should be similar to the Code Style justification.
 
 #### Best Practices Exemplars
 
-- [Detailed naming of vars.](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L10)
-- [Detailed comments](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L51) to help follow along with the code.
+- [Detailed naming of variables.](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L10)
+- [Detailed comments](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/8848b2e2cd55fa2972955fa1e9b967070bb43e82/Obscura/scripts/camera_controllers/lerp_smooth_camera.gd#L51) to help follow along with the code. They are not too long
+  and stright to the point in explaining the code.
+- [Great seperation between functions](https://github.com/ensemble-ai/exercise-2-camera-control-Glendios/blob/67b5555776edfb6f0b8f99c110f41e681b319549/Obscura/scripts/camera_controllers/speed_push_camera.gd#L53). This
+  makes it much easier to follow along.
